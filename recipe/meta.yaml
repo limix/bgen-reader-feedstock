@@ -1,6 +1,6 @@
 {% set name = "bgen-reader" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "624a5fae8382c2ae96b2761d4fc02ce6f8ea9b69d81ddeb1accccf59ad71970b" %}
+{% set version = "2.0.1" %}
+{% set sha256 = "de45d698f8d85f81dfe5b59aee73dde65a5fc9068c3dd5c9e05f906b983e3068" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win and py27]
   script: python -m pip install --no-deps --ignore-installed .
 
