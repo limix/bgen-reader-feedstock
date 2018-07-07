@@ -12,19 +12,20 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and py27]
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - bgen >=2.0.0
     - cffi >=1.11.4
     - pip
     - pytest-runner >=3.0
     - python
     - setuptools >=38.4.0
-    - toolchain
   run:
     - bgen >=2.0.0
     - cffi >=1.11.4
