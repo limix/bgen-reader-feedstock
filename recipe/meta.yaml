@@ -37,6 +37,7 @@ requirements:
     - toolz >=0.9.0
     - tqdm >=4.19.5
     - xarray >=0.10.7
+    - texttable >=1.40.0
 
 test:
   requires:
