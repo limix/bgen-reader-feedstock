@@ -1,6 +1,6 @@
 {% set name = "bgen-reader" %}
-{% set version = "2.0.5" %}
-{% set sha256 = "578d46ec9148a7665a7dc9553d3cbf9c26d5d76c8972c366a1ecc50992f2a9a2" %}
+{% set version = "2.0.6" %}
+{% set sha256 = "b017bf3adfc84ae515f52f699255b1ec8043e1b6d71ff994bfeb77febd46945b" %}
 
 package:
   name: {{ name|lower }}
