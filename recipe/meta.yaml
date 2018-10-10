@@ -1,15 +1,12 @@
-{% set name = "bgen-reader" %}
 {% set version = "2.0.7" %}
-{% set sha256 = "d407895597f240f38822ff9d8d83750d3fdf3194e1a8faab4baa6700ecfcd3f2" %}
 
 package:
-  name: {{ name|lower }}
+  name: bgen_reader
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/b/bgen-reader/bgen-reader-{{ version }}.tar.gz
+  sha256: d407895597f240f38822ff9d8d83750d3fdf3194e1a8faab4baa6700ecfcd3f2
 
 build:
   number: 0
