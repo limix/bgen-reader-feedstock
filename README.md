@@ -1,4 +1,4 @@
-About bgen-reader
+About bgen_reader
 =================
 
 Home: https://github.com/limix/bgen-reader-py
@@ -27,27 +27,27 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-bgen--reader-green.svg)](https://anaconda.org/conda-forge/bgen-reader) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/bgen-reader.svg)](https://anaconda.org/conda-forge/bgen-reader) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/bgen-reader.svg)](https://anaconda.org/conda-forge/bgen-reader) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/bgen-reader.svg)](https://anaconda.org/conda-forge/bgen-reader) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-bgen_reader-green.svg)](https://anaconda.org/conda-forge/bgen_reader) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/bgen_reader.svg)](https://anaconda.org/conda-forge/bgen_reader) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/bgen_reader.svg)](https://anaconda.org/conda-forge/bgen_reader) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/bgen_reader.svg)](https://anaconda.org/conda-forge/bgen_reader) |
 
-Installing bgen-reader
+Installing bgen_reader
 ======================
 
-Installing `bgen-reader` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `bgen_reader` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `bgen-reader` can be installed with:
+Once the `conda-forge` channel has been enabled, `bgen_reader` can be installed with:
 
 ```
-conda install bgen-reader
+conda install bgen_reader
 ```
 
-It is possible to list all of the versions of `bgen-reader` available on your platform with:
+It is possible to list all of the versions of `bgen_reader` available on your platform with:
 
 ```
-conda search bgen-reader --channel conda-forge
+conda search bgen_reader --channel conda-forge
 ```
 
 
@@ -87,17 +87,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating bgen-reader-feedstock
+Updating bgen_reader-feedstock
 ==============================
 
-If you would like to improve the bgen-reader recipe or build a new
+If you would like to improve the bgen_reader recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/bgen-reader-feedstock are
+Note that all branches in the conda-forge/bgen_reader-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
