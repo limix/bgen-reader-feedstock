@@ -1,4 +1,4 @@
-{% set version = "2.0.7" %}
+{% set version = "2.0.8" %}
 
 package:
   name: bgen_reader
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/b/bgen-reader/bgen-reader-{{ version }}.tar.gz
-  sha256: d407895597f240f38822ff9d8d83750d3fdf3194e1a8faab4baa6700ecfcd3f2
+  sha256: 801f217e4f22fe5acc67c09b47af1ce9f5e944c039b9b544420ca8fe20895542
 
 build:
   number: 0
@@ -34,7 +34,8 @@ requirements:
     - toolz >=0.9.0
     - tqdm >=4.19.5
     - xarray >=0.10.7
-    - texttable >=1.4.0
+    - texttable >=1.5.0
+    - cachetools >=3.0.0
 
 test:
   requires:
