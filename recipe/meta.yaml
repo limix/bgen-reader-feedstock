@@ -49,7 +49,7 @@ test:
     - python -c "import sys; import pandas; import bgen_reader; sys.exit(bgen_reader.test())"
 
 about:
-  home: https://github.com/limix/{{ name }}-py
+  home: http://github.com/limix/{{ name }}-py
   license: MIT
   license_family: MIT
   license_file: LICENSE.md
@@ -59,7 +59,7 @@ about:
     It supports both unphased genotypes and phased haplotype data with variable
     ploidy and number of alleles. It was designed to provides a compact data
     representation without sacrificing variant access performance.
-  doc_url: https://github.com/limix/{{ name }}-py
+  doc_url: https://bgen-reader.readthedocs.io
   dev_url: https://github.com/limix/{{ name }}-py
 
 extra:
