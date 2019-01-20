@@ -1,17 +1,18 @@
+{% set name = "bgen-reader" %}
 {% set version = "3.0.2" %}
 
 package:
-  name: bgen_reader
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/b/bgen-reader/bgen-reader-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 1c0bf5983b14e84b70b3b5465bacdf92cbcf37138be86c9bc10e8960b545a402
 
 build:
   number: 0
   skip: true  # [py27]
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -48,7 +49,7 @@ test:
     - python -c "import sys; import pandas; import bgen_reader; sys.exit(bgen_reader.test())"
 
 about:
-  home: https://github.com/limix/bgen-reader-py
+  home: https://github.com/limix/{{ name }}-py
   license: MIT
   license_family: MIT
   license_file: LICENSE.md
@@ -58,8 +59,8 @@ about:
     It supports both unphased genotypes and phased haplotype data with variable
     ploidy and number of alleles. It was designed to provides a compact data
     representation without sacrificing variant access performance.
-  doc_url: https://github.com/limix/bgen-reader-py
-  dev_url: https://github.com/limix/bgen-reader-py
+  doc_url: https://github.com/limix/{{ name }}-py
+  dev_url: https://github.com/limix/{{ name }}-py
 
 extra:
   recipe-maintainers:
