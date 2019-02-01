@@ -5,7 +5,7 @@
 About bgen-reader
 =================
 
-Home: https://github.com/limix/bgen-reader-py
+Home: http://github.com/limix/bgen-reader-py
 
 Package license: MIT
 
