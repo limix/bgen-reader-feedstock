@@ -1,5 +1,5 @@
 {% set name = "bgen-reader" %}
-{% set version = "3.0.3" %}
+{% set version = "3.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ebf205fb72960773044ddbb34e9f8774f4f5353e622f8e8846f54407ab8143d0
+  sha256: 2ccfc45d8f28862356aa9bef709572e4d319a01fbf027c24f468ca8f0327464a
 
 build:
   number: 0
