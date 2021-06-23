@@ -1,5 +1,5 @@
 {% set name = "bgen-reader" %}
-{% set version = "4.0.7" %}
+{% set version = "4.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0406d23c0b5f027eb6782e2c3ea75588fbe59a4e35267c9070c6ff3bf7c76a9
+  sha256: 50414918914b8cd893d0dfa7fef32ee1912ba1802ead37d9502b3d8936d8c68a
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<37]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -48,7 +48,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.md
-  summary: 'A BGEN file format reader'
+  summary: A BGEN file format reader
   description: |
     BGEN is a file format for storing large genetic datasets.
     It supports both unphased genotypes and phased haplotype data with variable
